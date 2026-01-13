@@ -1,0 +1,19 @@
+# Site settings
+title: "FunkyBooboo's Portfolio"
+description: "Personal site highlighting my work, projects, and experience."
+url: "https://funkybooboo.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - README.md
