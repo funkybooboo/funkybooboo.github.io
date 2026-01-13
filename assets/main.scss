@@ -1,142 +1,135 @@
 ---
 ---
 
+// --------------------------------------------------
+// Theme: Minimal Eggplant
 // Palette: https://coolors.co/palette/fcf7ff-c4cad0-878c8f-a4969b-655560
-$lavender-blush: #FCF7FF;
-$silver-sand:    #C4CAD0;
-$battleship-grey:#878C8F;
-$rose-dust:      #A4969B;
-$eggplant:       #655560;
+// --------------------------------------------------
 
-// Vibrant Accent for "Excitement" (complementary to the muted palette)
-// A bright cyan/teal works famously with deep purple/eggplant
-$electric-blue:  #4dabf7; 
+// 1. Variables
+$white:          #FCF7FF; // Lavender Blush
+$light-grey:     #C4CAD0; // Silver Sand
+$mid-grey:       #878C8F; // Battleship Grey
+$accent:         #A4969B; // Rose Dust
+$bg-color:       #655560; // Eggplant
 
-// Minima Overrides
-$background-color: $eggplant;
-$text-color:       $lavender-blush;
-$brand-color:      $lavender-blush; // Make site title pop
+// 2. Minima Overrides
+$background-color: $bg-color;
+$text-color:       $white;       // High contrast against Eggplant
+$brand-color:      $white;
 
-$link-base-color:    $electric-blue;
-$link-visited-color: mix($electric-blue, $eggplant, 70%);
-$link-hover-color:   lighten($electric-blue, 15%);
+$link-base-color:    $white;     
+$link-visited-color: $light-grey;
+$link-hover-color:   $white;
 
 // Typography
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-$base-font-size:   18px; // Slightly larger for modern feel
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
 $base-line-height: 1.6;
 
 @import "minima";
 
-// --- Modern & Clean Customizations ---
+// 3. Custom Styles
 
 body {
   background-color: $background-color;
   color: $text-color;
-  font-weight: 300; // Lighter weight for "Clean" look
+  font-weight: 300; // Light, clean feel
   -webkit-font-smoothing: antialiased;
 }
 
 // Layout
 .wrapper {
-  max-width: 900px; // More breathing room
+  max-width: 800px;
+  padding: 0 30px;
 }
 
-// Headers - Bold & Clean
+// Headers
 h1, h2, h3, h4, h5, h6 {
-  color: $lavender-blush;
+  color: $white;
   font-weight: 700;
-  letter-spacing: -0.02em; // Tighten tracking for modern look
-  margin-top: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 3rem; // Big and bold
-  border-bottom: none;
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: 2rem;
-  border-bottom: 1px solid rgba($rose-dust, 0.3); // Subtle divider
-  padding-bottom: 10px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid $mid-grey; // Subtle section divider
+  padding-bottom: 0.5rem;
 }
 
-// Links - The "Excitement"
+// Links - Simple & High Contrast
 a {
-  color: $link-base-color;
+  color: $white;
   text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid $accent; // Distinct underline in Rose Dust
+  transition: border-color 0.2s ease;
 
   &:hover {
-    color: $link-hover-color;
-    border-bottom: 2px solid $link-hover-color; // Animate border on hover
+    color: $white;
+    border-bottom-color: $white; // Brighter on hover
   }
-}
-
-// Code Blocks - Distinct & Clean
-pre, code {
-  font-family: "JetBrains Mono", "Fira Code", "Menlo", monospace; // Better mono font if available
-  background-color: rgba(0, 0, 0, 0.3) !important; // Darker, translucent bg
-  border-radius: 6px;
-}
-
-code {
-  color: lighten($silver-sand, 10%) !important;
-  padding: 3px 6px;
-}
-
-pre {
-  padding: 20px;
-  border: 1px solid rgba($rose-dust, 0.5); // Subtle border
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Slight depth
-  
-  code {
-    background-color: transparent !important;
-    padding: 0;
-    color: inherit;
-  }
-}
-
-.highlight {
-  background-color: transparent !important;
 }
 
 // Navigation
 .site-title {
-  font-weight: 800;
-  letter-spacing: -0.05em;
-  font-size: 1.8rem;
+  font-weight: 700;
+  border: none; // No underline for logo
 }
 
 .site-nav .page-link {
-  color: $silver-sand !important;
-  font-weight: 500;
+  color: $light-grey !important; // Muted nav links
+  border: none;
+  
   &:hover {
-    color: $link-hover-color !important;
+    color: $white !important;
   }
 }
 
-// Buttons (if any) or Call to Actions
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid $link-base-color;
-  color: $link-base-color;
+// Code Blocks
+pre, code {
+  font-family: "Menlo", "Consolas", "Bitstream Vera Sans Mono", monospace;
   border-radius: 4px;
-  margin-top: 10px;
+}
+
+// Inline code
+code {
+  background-color: rgba(0, 0, 0, 0.2); // Tonal darkening
+  color: $light-grey;
+  padding: 2px 5px;
+}
+
+// Block code
+pre {
+  background-color: rgba(0, 0, 0, 0.2); // Tonal darkening
+  padding: 20px;
+  border: 1px solid $mid-grey; // Minimal border
   
-  &:hover {
-    background-color: $link-base-color;
-    color: $eggplant;
-    text-decoration: none;
+  code {
+    background-color: transparent;
+    padding: 0;
+    color: $light-grey;
   }
+}
+
+// Syntax Highlighting Overrides to match palette
+.highlight {
+  background-color: transparent !important;
+  
+  .c { color: $mid-grey; font-style: italic; } // Comments
+  .k { color: $accent; font-weight: bold; }    // Keywords
+  .s { color: $light-grey; }                   // Strings
+  .n { color: $white; }                        // Numbers
 }
 
 // Footer
 .site-footer {
-  border-top: 1px solid rgba($rose-dust, 0.3);
-  color: $rose-dust;
+  border-top: 1px solid $mid-grey;
+  padding-top: 20px;
+  color: $mid-grey;
 }
