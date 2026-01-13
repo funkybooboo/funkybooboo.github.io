@@ -1,20 +1,142 @@
 ---
 ---
 
-// Minimal Variables for Dark Mode
-$background-color: #181818;
-$text-color: #d0d0d0;
-$brand-color: #e0e0e0;
-$link-base-color: #3391ff;
+// Palette: https://coolors.co/palette/fcf7ff-c4cad0-878c8f-a4969b-655560
+$lavender-blush: #FCF7FF;
+$silver-sand:    #C4CAD0;
+$battleship-grey:#878C8F;
+$rose-dust:      #A4969B;
+$eggplant:       #655560;
+
+// Vibrant Accent for "Excitement" (complementary to the muted palette)
+// A bright cyan/teal works famously with deep purple/eggplant
+$electric-blue:  #4dabf7; 
+
+// Minima Overrides
+$background-color: $eggplant;
+$text-color:       $lavender-blush;
+$brand-color:      $lavender-blush; // Make site title pop
+
+$link-base-color:    $electric-blue;
+$link-visited-color: mix($electric-blue, $eggplant, 70%);
+$link-hover-color:   lighten($electric-blue, 15%);
+
+// Typography
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$base-font-size:   18px; // Slightly larger for modern feel
+$base-line-height: 1.6;
 
 @import "minima";
 
-// Ensure Code Blocks are Dark
+// --- Modern & Clean Customizations ---
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-weight: 300; // Lighter weight for "Clean" look
+  -webkit-font-smoothing: antialiased;
+}
+
+// Layout
+.wrapper {
+  max-width: 900px; // More breathing room
+}
+
+// Headers - Bold & Clean
+h1, h2, h3, h4, h5, h6 {
+  color: $lavender-blush;
+  font-weight: 700;
+  letter-spacing: -0.02em; // Tighten tracking for modern look
+  margin-top: 2.5rem;
+}
+
+h1 {
+  font-size: 3rem; // Big and bold
+  border-bottom: none;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 1px solid rgba($rose-dust, 0.3); // Subtle divider
+  padding-bottom: 10px;
+}
+
+// Links - The "Excitement"
+a {
+  color: $link-base-color;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: $link-hover-color;
+    border-bottom: 2px solid $link-hover-color; // Animate border on hover
+  }
+}
+
+// Code Blocks - Distinct & Clean
 pre, code {
-  background-color: #111 !important;
-  color: #eee !important;
+  font-family: "JetBrains Mono", "Fira Code", "Menlo", monospace; // Better mono font if available
+  background-color: rgba(0, 0, 0, 0.3) !important; // Darker, translucent bg
+  border-radius: 6px;
+}
+
+code {
+  color: lighten($silver-sand, 10%) !important;
+  padding: 3px 6px;
+}
+
+pre {
+  padding: 20px;
+  border: 1px solid rgba($rose-dust, 0.5); // Subtle border
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Slight depth
+  
+  code {
+    background-color: transparent !important;
+    padding: 0;
+    color: inherit;
+  }
 }
 
 .highlight {
-  background-color: #111 !important;
+  background-color: transparent !important;
+}
+
+// Navigation
+.site-title {
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  font-size: 1.8rem;
+}
+
+.site-nav .page-link {
+  color: $silver-sand !important;
+  font-weight: 500;
+  &:hover {
+    color: $link-hover-color !important;
+  }
+}
+
+// Buttons (if any) or Call to Actions
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid $link-base-color;
+  color: $link-base-color;
+  border-radius: 4px;
+  margin-top: 10px;
+  
+  &:hover {
+    background-color: $link-base-color;
+    color: $eggplant;
+    text-decoration: none;
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid rgba($rose-dust, 0.3);
+  color: $rose-dust;
 }
