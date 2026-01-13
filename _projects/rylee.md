@@ -6,16 +6,14 @@ repo_url: https://github.com/funkybooboo/rylee
 description: A chess bot designed to mimic human behavior using AI techniques.
 ---
 
-# Rylee
-
 **Repository:** [github.com/funkybooboo/rylee](https://github.com/funkybooboo/rylee)
 
 Rylee is a custom-built chess engine designed not just to play optimal moves, but to mimic human behavior. The goal is to create a more realistic and interesting opponent for learning players, rather than a perfect, unbeatable machine.
 
 ## Goals
 
-*   **Human-like Play**: Simulate "natural" mistakes and strategic patterns common to human players.
-*   **Adaptive Difficulty**: Adjust gameplay style based on the opponent's skill level.
+*   Human-like Play: Simulate "natural" mistakes and strategic patterns common to human players.
+*   Adaptive Difficulty: Adjust gameplay style based on the opponent's skill level.
 
 ## Implementation Details
 

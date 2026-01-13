@@ -4,18 +4,16 @@ title: About
 permalink: /about/
 ---
 
-# About Me
-
 I am a Software Engineer and Computer Science MS candidate at Utah State University. I focus on building scalable systems, engineering software solutions, and applying rigorous development practices.
 
 Currently, I am a Graduate Teaching Assistant for Multi-Agent Systems and Software Engineering courses, having previously interned at **Domo** working on cloud data platforms.
 
 ## Skills
 
-**Languages:** Java/Kotlin, TypeScript/JavaScript, Python, C/C++, Rust, Go, C#
-**Frameworks:** SpringBoot, React, Next.js, Django, Flask, PyTorch
-**Infrastructure:** AWS (EC2, S3, Lambda), Docker, Kubernetes, Linux
-**Tools:** Git, Vim/Neovim, Jenkins, GitLab CI/CD
+Languages: Java/Kotlin, TypeScript/JavaScript, Python, C/C++, Rust, Go, C#
+Frameworks: SpringBoot, React, Next.js, Django, Flask, PyTorch
+Infrastructure: AWS (EC2, S3, Lambda), Docker, Kubernetes, Linux
+Tools: Git, Vim/Neovim, Jenkins, GitLab CI/CD
 
 ---
 
@@ -44,12 +42,12 @@ Currently, I am a Graduate Teaching Assistant for Multi-Agent Systems and Softwa
 
 ## Certifications
 
-*   **Introduction to Linux** - edX (May 2024)
-*   **AWS Cloud Practitioner Foundations** - Amazon Web Services (Sep 2023)
+*   Introduction to Linux - edX (May 2024)
+*   AWS Cloud Practitioner Foundations - Amazon Web Services (Sep 2023)
 
 ---
 
 ## Publications
 
-*   **IEEE**: Electric Vehicle Charger Reservation Service (Aug 2024)
-*   **ACM**: Comparing Feedback from Large Language Models and Instructors (Apr 2024)
+*   IEEE: Electric Vehicle Charger Reservation Service (Aug 2024)
+*   ACM: Comparing Feedback from Large Language Models and Instructors (Apr 2024)

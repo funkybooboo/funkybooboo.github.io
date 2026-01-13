@@ -39,12 +39,11 @@ body {
 a {
   color: $link-base-color;
   text-decoration: none;
-  border-bottom: 1px solid transparent; // Clean look
-  transition: all 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 
   &:hover {
     color: $link-hover-color;
-    border-bottom: 1px solid $link-hover-color; // Underline on hover
+    text-decoration: underline;
   }
   
   &:visited {
