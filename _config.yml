@@ -1,0 +1,9 @@
+title: "Nate Stott's Portfolio"
+description: "My personal portfolio showcase."
+theme: minima
+github_username: funkybooboo
+header_pages:
+  - index.md
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
