@@ -1,6 +1,6 @@
 # Detailed Setup Guide
 
-This guide provides more comprehensive instructions for setting up the FunkyBooBoo Portfolio development environment.
+This guide provides more comprehensive instructions for setting up the Portfolio development environment.
 
 ## Prerequisites
 

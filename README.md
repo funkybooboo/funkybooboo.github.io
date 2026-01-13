@@ -1,4 +1,4 @@
-# FunkyBooBoo Portfolio
+# Nate Stott's Portfolio
 
 My personal portfolio showcase website, built with Jekyll and hosted on GitHub Pages.
 
