@@ -1,83 +1,20 @@
 ---
 ---
 
-// 1. Minima Variables Override
-$brand-color:           #e0e0e0;
-$background-color:      #121212; // Very dark grey, softer than #000
-$text-color:            #d0d0d0;
-$link-base-color:       #3391ff; // Keep the blue links
-$link-visited-color:    #2271c3;
-$link-hover-color:      #74c0fc;
+// Minimal Variables for Dark Mode
+$background-color: #181818;
+$text-color: #d0d0d0;
+$brand-color: #e0e0e0;
+$link-base-color: #3391ff;
 
-$code-background-color: #1e1e1e; // Explicit variable for code bg if Minima uses it, or for our override
-
-// 2. Import Minima
 @import "minima";
 
-// 3. Simple Overrides
-
-// Ensure body uses the dark background
-body {
-  background-color: $background-color;
-  color: $text-color;
-}
-
-// Links
-a {
-  color: $link-base-color;
-  text-decoration: none;
-  &:hover {
-    color: $link-hover-color;
-    text-decoration: underline;
-  }
-  &:visited {
-    color: $link-visited-color;
-  }
-}
-
-// Code Blocks - Essential Dark Mode fix
-// Minima's default syntax highlighting is often light-based. 
-// We need to invert or override it for a dark theme.
-
+// Ensure Code Blocks are Dark
 pre, code {
-  background-color: $code-background-color;
-  color: #f8f8f2; // Off-white for code text
-  border-radius: 4px;
+  background-color: #111 !important;
+  color: #eee !important;
 }
 
-code {
-  padding: 2px 4px;
-}
-
-pre {
-  padding: 15px;
-  border: 1px solid #333;
-  overflow-x: auto;
-  
-  code {
-    background-color: transparent;
-    padding: 0;
-    color: inherit;
-  }
-}
-
-// Simple Syntax Highlighting Overrides for Dark Mode
-// These ensure the code isn't dark-text-on-dark-background
 .highlight {
-  background-color: $code-background-color;
-  color: #f8f8f2;
-
-  .c  { color: #75715e; } /* Comment */
-  .k  { color: #66d9ef; } /* Keyword */
-  .s  { color: #e6db74; } /* String */
-  .nb { color: #f8f8f2; } /* Name.Builtin */
-  .v  { color: #f8f8f2; } /* Variable */
-  .nt { color: #f92672; } /* Name.Tag */
-  .na { color: #a6e22e; } /* Name.Attribute */
-}
-
-// Adjust blockquotes to be visible on dark background
-blockquote {
-  color: #888;
-  border-left-color: #333;
+  background-color: #111 !important;
 }
