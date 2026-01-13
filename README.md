@@ -20,7 +20,7 @@ To run this site locally, ensure you have Ruby installed.
 
 ## Deployment
 
-This site is automatically deployed to GitHub Pages when changes are pushed to the `main` branch.
+This site is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. It is configured to run on the custom domain `natestott.net`.
 
 1. **Commit your changes**:
    ```bash
@@ -46,4 +46,6 @@ For more detailed information, please see the following guides in the `docs/` di
 
 - [Detailed Setup Guide](docs/setup.md)
 - [Customization Guide](docs/customization.md)
+- [Writing Blog Posts](docs/writing-posts.md)
+- [Managing Projects](docs/managing-projects.md)
 - [GitHub Pages Information](docs/github-pages.md)

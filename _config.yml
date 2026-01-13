@@ -1,9 +1,19 @@
-title: "Nate Stott's Portfolio"
-description: "My personal portfolio showcase."
+title: "Nate Stott | Software Engineer"
+description: "Portfolio of Nate Stott - Software Engineer and Computer Scientist."
+url: "https://natestott.net"
 theme: minima
 github_username: funkybooboo
 header_pages:
-  - index.md
+  - about.md
+  - projects.md
+  - blog.md
+  - contact.md
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+collections:
+  projects:
+    output: true
+
+# Favicon
+excerpt_separator: ""

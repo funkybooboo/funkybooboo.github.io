@@ -3,14 +3,19 @@ layout: home
 title: Home
 ---
 
-# Hello World!
+# Hi, I'm Nate Stott.
+## Software Engineer | Computer Scientist
 
-Welcome to my portfolio. I am Nate Stott.
+I am a Software Engineer and Computer Science MS candidate at Utah State University. I focus on building scalable systems, engineering software solutions, and applying rigorous development practices.
 
-This site is built with Jekyll and hosted on GitHub Pages.
+Check out my [Projects](/projects/) or learn more [About Me](/about/).
 
-## Connect with Me
+### Recent Updates
 
-- [GitHub Profile](https://github.com/funkybooboo)
-- [Download My Resume](https://github.com/funkybooboo/resume/blob/main/resume.pdf)
-
+<ul>
+  {% for post in site.posts limit:3 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
