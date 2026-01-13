@@ -1,99 +1,151 @@
 ---
 ---
 
-// 1. Define Variables (Override Minima Defaults)
-$base-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-$code-font-family: "JetBrains Mono", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+// 1. Refined Monochrome Variables
+$brand-color:           #ffffff;
+$background-color:      #0a0a0a; // Deep, rich black (better than #000 for screens)
+$text-color:            #eaeaea; // Soft white for readability
+$link-base-color:       #ffffff; // Keep links white to stick to B&W theme
+$link-visited-color:    #cccccc;
+$link-hover-color:      #ffffff;
 
-// Dark Theme Colors
-$background-color: #121212;
-$text-color:       #e0e0e0;
-$brand-color:      #ffffff;
-$grey-color:       #828282;
-$grey-color-light: #424242;
-$grey-color-dark:  #eaeaea;
-
-// Link Colors
-$link-base-color:  #58a6ff; // GitHub Blue
-$link-visited-color: #58a6ff;
-$link-hover-color: #a5d6ff;
-
-// Table borders
-$table-text-color: $text-color;
-$table-stripe-color: #1e1e1e;
-$table-border-color: #30363d;
+// Typography
+$base-font-family:      "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$code-font-family:      "JetBrains Mono", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+$base-font-size:        16px;
+$base-line-height:      1.7; // Improve readability
 
 // 2. Import Minima
 @import "minima";
 
-// 3. Custom Styles (After Minima to override specific selectors)
+// 3. Polished Overrides
 
 body {
   background-color: $background-color;
   color: $text-color;
-  font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-smoothing: antialiased;
+  font-family: $base-font-family;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased; // Crisp text on Mac
 }
 
-// Make Headers Monospace for that "Engineer" feel
-h1, h2, h3, h4, h5, h6 {
-  font-family: $code-font-family;
-  color: #ffffff;
-  letter-spacing: -0.02em;
+// Layout refinement
+.wrapper {
+  max-width: 800px; // Optimal reading width
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
-h1 {
-  border-bottom: 1px solid #30363d;
-  padding-bottom: 0.5rem;
-}
+// Links - Elegant & Clear
+a {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 1px solid #666; // Subtle underline by default
+  transition: all 0.2s ease-in-out;
 
-// Navigation Styling
-.site-title {
-  font-family: $code-font-family;
-  font-weight: 700;
-  color: #ffffff !important;
-}
-
-.site-nav .page-link {
-  color: $text-color !important;
-  font-family: $code-font-family;
   &:hover {
-    color: $link-base-color !important;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff; // Brighten on hover
+  }
+  
+  &:visited {
+    color: $text-color;
   }
 }
 
-// Post List Styling
-.post-list > li {
-  margin-bottom: 2rem;
-}
-
-.post-meta {
-  color: $grey-color;
+// Headers - Strong & Geometric
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
   font-family: $code-font-family;
-  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-// Code Blocks
+h1 {
+  font-size: 2.5rem;
+  border-bottom: none; // Cleaner look without the full bar
+}
+
+h2 {
+  font-size: 1.75rem;
+  border-bottom: 1px solid #333; // Subtle separation for sections
+  padding-bottom: 0.5rem;
+}
+
+// Navigation - Minimalist
+.site-title, .site-title:visited {
+  color: #ffffff !important;
+  font-family: $code-font-family;
+  font-weight: 700;
+  border-bottom: none; // No underline for logo
+}
+
+.site-nav .page-link {
+  color: #999 !important; // Dimmed nav items
+  font-family: $code-font-family;
+  border-bottom: none;
+  font-size: 0.95rem;
+
+  &:hover {
+    color: #ffffff !important; // Bright on hover
+  }
+}
+
+// Code Blocks - Clean & Readable
 pre, code {
-  background-color: #161b22; // GitHub Dark Dimmed code bg
-  border: 1px solid #30363d;
-  border-radius: 6px;
-  color: #e0e0e0;
+  font-family: $code-font-family;
+  font-size: 0.9rem;
 }
 
-.highlighter-rouge .highlight {
-  background: #161b22;
+code {
+  padding: 0.2em 0.4em;
+  background-color: #222;
+  border-radius: 4px;
+  color: #fff;
 }
 
-// Blockquotes
-blockquote {
-  color: $grey-color;
-  border-left-color: $grey-color-light;
+pre {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 1.5rem 0;
+  
+  code {
+    background-color: transparent;
+    padding: 0;
+    color: #ccc;
+  }
+}
+
+// Syntax Highlighting - Grayscale + Subtle Emphasis
+.highlight {
+  background: #111;
+  .c { color: #666; font-style: italic; } // Comments dimmed
+  .k { color: #fff; font-weight: bold; }  // Keywords bold white
+  .s { color: #ddd; } // Strings light grey
+  .n { color: #fff; } // Numbers white
 }
 
 // Footer
 .site-footer {
-  border-top: 1px solid #30363d;
-  background-color: $background-color;
-  color: $grey-color;
+  border-top: 1px solid #222;
+  padding-top: 40px;
+  margin-top: 60px;
+  color: #666;
+  
+  .footer-heading {
+    color: #fff;
+    font-family: $code-font-family;
+  }
+  
+  a {
+    color: #888;
+    border-bottom: 1px solid #444;
+    &:hover {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+  }
 }
