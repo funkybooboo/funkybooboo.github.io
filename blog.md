@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: Blog
 permalink: /blog/
 ---
-
-# Blog
 
 Welcome to my blog. Here I share my thoughts on software engineering, algorithms, and system design.
 
@@ -17,3 +15,4 @@ Welcome to my blog. Here I share my thoughts on software engineering, algorithms
     </li>
   {% endfor %}
 </ul>
+
