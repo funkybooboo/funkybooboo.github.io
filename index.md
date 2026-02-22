@@ -6,6 +6,8 @@ title: Home
 # Hi, I'm Nate Stott.
 ## Software Engineer | Computer Scientist
 
-Welcome to my portfolio. This is where I document my work in software engineering, share updates on my projects, and occasionally write about technology.
+Software engineer with production experience at **Domo** building scalable data pipelines processing 10M+ records daily. MS Computer Science candidate at Utah State University specializing in AI/ML with published research in **IEEE** and **ACM**. Nominated for **TA of the Year 2025**.
 
-Check out my [Projects](/projects/) to see what I've been building, or visit the [About Me](/about/) page for my full background and resume.
+Strong advocate for clean architecture, test-driven development, and twelve-factor methodology. Daily LeetCode practitioner and CodeCrafters contributor.
+
+Check out my [Projects](/projects/) to see what I've been building, or visit the [About Me](/about/) page for my full background and experience.
