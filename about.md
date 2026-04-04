@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Software engineer with production experience at Domo building scalable data pipelines and cloud integrations. MS Computer Science candidate at Utah State University specializing in AI/ML with published research in IEEE and ACM. Nominated for TA of the Year 2025 for exceptional teaching in software engineering and multi-agent systems.
+Associate Software Engineer at Domo building scalable data pipelines and cloud integrations. MS Computer Science candidate at Utah State University specializing in AI/ML with published research in IEEE and ACM. Nominated for TA of the Year 2025 for exceptional teaching in software engineering and multi-agent systems.
 
 Strong advocate for clean architecture, test-driven development, and twelve-factor methodology. Linux power user (Arch/NixOS) with deep systems programming knowledge.
 
@@ -28,13 +28,22 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 
 ## Experience
 
-**Software Engineer Intern @ Domo** *(Sep 2025 - Present)*
-*   Integrated Domo's data platform with Snowflake and BigQuery, enabling reliable bi-directional data transfer for 50+ enterprise clients.
-*   Built and optimized Databricks data pipelines processing 10M+ records daily, reducing processing time by 40%.
-*   Improved API response times by 60% through database query optimization, connection pooling, and Redis caching.
-*   Automated data validation workflows, reducing manual QA effort by 20 hours/week and improving accuracy to 99.9%.
+**Associate Software Engineer @ Domo** *(Apr 2026 - Present)*
+*   Build and ship features across Domo's data core — the query engine that runs the entire platform — working across Java, C++, and Go services covering DataSet ingestion, query execution, and data transformation.
+*   Dig into complex CRIs spanning Adrenaline DataFlow, Domo's custom database internals, and multi-service call stacks, tracking down root causes and shipping fixes.
+*   Implement Debezium-based CDC pipelines for real-time data replication, wiring up change event streams across distributed data sources.
+*   Work directly inside Domo's proprietary database engine and Adrenaline DataFlow, fixing correctness bugs and improving query execution performance at the storage and processing layer.
+*   Join customer support calls to help diagnose live data integration failures, translating deep technical findings into fast resolutions that directly unblock customers.
+*   Represented the data core team at Domopalooza — Domo's annual user conference — engaging with enterprise customers and showcasing platform capabilities.
 
-**Graduate Teaching Assistant @ Utah State University** *(Aug 2025 - Present)*
+**Software Engineer Intern @ Domo** *(Sep 2025 - Apr 2026)*
+*   Led a team of 3 fellow interns, assigning tasks, unblocking teammates, and driving consistent sprint delivery across the internship program.
+*   Shipped production code across Java, C++, and Go services in Domo's data core — the query processing backbone of the entire product — building out DataSet ingestion pipelines that run at scale.
+*   Tracked down and fixed CRIs in Adrenaline DataFlow and JDBC/REST connector integrations, reading service logs, analyzing SQL execution plans, and shipping production fixes.
+*   Built and debugged connectors to BigQuery, Snowflake, Redshift, and Databricks, implementing OAuth, schema mapping, and cursor-based pagination to get reliable, idempotent data ingestion working correctly.
+*   Practiced TDD when building connector and ingestion features, writing tests first to drive design and catch regressions; joined customer support calls to help debug live data integration issues.
+
+**Graduate Teaching Assistant @ Utah State University** *(Aug 2025 - Apr 2026)*
 *   Deliver lectures and labs for CS5110 (Multi-Agent Systems) and CS3450 (Software Engineering).
 *   Nominated for TA of the Year 2025 for exceptional teaching and mentoring.
 *   Achieved 95% student satisfaction rating through organized study groups and office hours.
