@@ -15,8 +15,8 @@ Artisan Commerce is an open-source platform for artisan e-commerce with queue-ba
 *   **Queue-Based Capacity Management:** Revolutionary system that tracks finite production capacity and provides transparent delivery estimates for made-to-order goods
 *   **Serverless Edge Architecture:** Built on Cloudflare Workers for global performance with <$5/month operational costs
 *   **Zero Vendor Lock-In:** Comprehensive adapter pattern architecture with migration paths to PostgreSQL, AWS S3, and traditional hosting
-*   **Infrastructure as Code:** Complete Terraform deployment achieving 99.9% uptime SLA
-*   **SLSA Level 3 Security:** Supply chain security with 12-Factor App compliance
+*   **Adapter Pattern:** Comprehensive adapter architecture ensuring zero vendor lock-in with migration paths to PostgreSQL, AWS S3, and traditional hosting
+*   **SLSA Level 3 Target:** Supply chain security goal with 12-Factor App compliance
 
 ## Technology Stack
 
@@ -24,7 +24,7 @@ Artisan Commerce is an open-source platform for artisan e-commerce with queue-ba
 *   **Backend:** Hono on Cloudflare Workers (serverless functions at the edge)
 *   **Database:** Drizzle ORM + Cloudflare D1 (distributed SQLite)
 *   **Storage:** Cloudflare R2 (S3-compatible object storage)
-*   **Infrastructure:** Terraform with comprehensive IaC
+*   **Configuration:** `wrangler.toml` for Cloudflare bindings (Terraform remains a planned ADR option, not yet built)
 *   **Testing:** TDD with Vitest + Playwright targeting 85%+ coverage
 
 ## Challenges & Solutions
@@ -45,7 +45,7 @@ The platform follows modern cloud-native principles:
 
 - **Edge-First:** Runs globally on Cloudflare's network (200+ locations) for low latency
 - **Cost-Optimized:** Free tiers cover expected traffic, with paid tiers remaining cheap at scale
-- **Portable:** Everything defined in Terraform + Git, fully exportable
+- **Portable:** Adapter-pattern architecture makes the platform exportable to traditional infrastructure if needed
 - **Secure:** SLSA Level 3 provenance, automated security scanning, principle of least privilege
 
 Monthly cost: ~$1-5 (domain + transaction fees) - everything else runs on free tiers.

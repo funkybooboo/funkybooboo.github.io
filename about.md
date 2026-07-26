@@ -6,7 +6,7 @@ permalink: /about/
 
 Associate Software Engineer at Domo building scalable data pipelines and cloud integrations. MS Computer Science candidate at Utah State University specializing in AI/ML with published research in IEEE and ACM. Nominated for TA of the Year 2025 for exceptional teaching in software engineering and multi-agent systems.
 
-Strong advocate for clean architecture, test-driven development, and twelve-factor methodology. Linux power user (Arch/NixOS) with deep systems programming knowledge.
+Strong advocate for clean architecture, test-driven development, and twelve-factor methodology. Linux power user (Arch Linux with the Nix package manager) with hands-on systems programming through custom OS and standard-library projects.
 
 ## Skills
 
@@ -52,7 +52,7 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 *   Championed TDD adoption, increasing code coverage from 40% to 85% and reducing production bugs by 50%.
 *   Led Docker containerization initiative, reducing deployment time from 2 hours to 15 minutes.
 *   Migrated team from Azure DevOps to GitHub with CI/CD automation, reducing build times by 35%.
-*   Architected workflow automation solutions saving 100+ hours/month and reducing costs by $50K annually.
+*   Architected workflow automation solutions that removed recurring manual work across departments.
 
 **Software Engineer Intern @ ASPIRE Research Center** *(Jul 2024 - Dec 2024)*
 *   Collaborated on upgrading electric bus fleet infrastructure from OCPP 1.6.1 to OCPP 2.0.1.
@@ -60,7 +60,7 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 
 **Full Stack Developer Intern @ iFIT** *(May 2024 - Aug 2024)*
 *   Developed web interfaces using React.js/Next.js with cross-browser compatibility.
-*   Created RESTful APIs and GraphQL endpoints, reducing API response times by 25%.
+*   Created RESTful APIs and GraphQL endpoints for fitness web applications.
 
 ---
 
