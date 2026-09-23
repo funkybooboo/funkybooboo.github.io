@@ -16,7 +16,7 @@ and re-runs safely and idempotently.
 
 ## Key Features
 
-*   **Migration engine:** 152 ordered, idempotent, non-fatal migrations that
+*   **Migration engine:** 150+ ordered, idempotent, non-fatal migrations that
     install packages, link config, deploy system files, and enable services.
     A single failure records a warning and continues --- one broken step never
     aborts a whole-machine convergence.
