@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Associate Software Engineer at Domo building scalable data pipelines and cloud integrations. MS Computer Science candidate at Utah State University specializing in AI/ML with published research in IEEE and ACM. Nominated for TA of the Year 2025 for exceptional teaching in software engineering and multi-agent systems.
+Software Engineer II at Progress Software building scalable data pipelines and cloud integrations on the Domo platform. MS Computer Science candidate at Utah State University specializing in AI/ML with published research in IEEE and ACM. Nominated for TA of the Year 2025 for exceptional teaching in software engineering and multi-agent systems.
 
 Strong advocate for clean architecture, test-driven development, and twelve-factor methodology. Linux power user (Arch Linux with the Nix package manager) with hands-on systems programming through custom OS and standard-library projects.
 
@@ -28,7 +28,11 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 
 ## Experience
 
-**Associate Software Engineer @ Domo** *(Apr 2026 - Present)*
+**Software Engineer II @ Progress Software** *(Sep 2026 - Present)*
+*   Promoted to Software Engineer II after Progress Software's acquisition of Domo, continuing on the same data core team building the query engine that runs the Domo platform.
+*   Ship features across Java, C++, and Go services covering DataSet ingestion, query execution, and data transformation, owning work end-to-end with increased autonomy and less oversight from senior engineers.
+
+**Software Engineer I @ Domo** *(Apr 2026 - Sep 2026)*
 *   Build and ship features across Domo's data core — the query engine that runs the entire platform — working across Java, C++, and Go services covering DataSet ingestion, query execution, and data transformation.
 *   Dig into complex CRIs spanning Adrenaline DataFlow, Domo's custom database internals, and multi-service call stacks, tracking down root causes and shipping fixes.
 *   Implement Debezium-based CDC pipelines for real-time data replication, wiring up change event streams across distributed data sources.
