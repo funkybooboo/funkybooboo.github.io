@@ -4,17 +4,16 @@ My personal portfolio showcase website, built with Jekyll and hosted on GitHub P
 
 ## Local Development
 
-To run this site locally, ensure you have Ruby installed.
+To run this site locally, ensure you have Ruby and Bundler installed.
 
 1. **Install dependencies**:
    ```bash
-   # If bundle is not in your path
-   /home/nate/.local/share/gem/ruby/3.4.0/bin/bundle install
+   bundle install
    ```
 
 2. **Serve the site**:
    ```bash
-   /home/nate/.local/share/gem/ruby/3.4.0/bin/bundle exec jekyll serve
+   bundle exec jekyll serve
    ```
    The site will be available at `http://localhost:4000`.
 
