@@ -71,7 +71,7 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 ## Education
 
 **M.S. in Computer Science (AI Specialization)** - Utah State University *(2025 - Present)*
-*   All coursework complete; thesis in progress
+*   All coursework complete; thesis in progress: [khem](/projects/khem/), a prebiotic chemistry simulator in Rust
 *   Focus: Machine learning, multi-agent systems, distributed computing
 *   Published research in IEEE and ACM
 *   Nominated for TA of the Year 2025

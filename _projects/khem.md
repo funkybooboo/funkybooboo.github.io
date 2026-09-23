@@ -3,12 +3,12 @@ layout: page
 title: khem - Prebiotic Chemistry Simulator
 permalink: /projects/khem/
 repo_url: https://github.com/funkybooboo/khem
-description: Pure-Rust simulation of 3D worlds of atoms - real elements, real bond energies, and a measured gate ladder from stability toward evolution.
+description: My M.S. thesis project - a pure-Rust simulation of 3D worlds of atoms with real elements, real bond energies, and a measured gate ladder from stability toward evolution.
 ---
 
 **Repository:** [github.com/funkybooboo/khem](https://github.com/funkybooboo/khem)
 
-khem simulates 3D worlds of atoms: ten real elements (H, C, N, O, P, S, Si,
+khem is my M.S. thesis project at Utah State University. It simulates 3D worlds of atoms: ten real elements (H, C, N, O, P, S, Si,
 Fe, Na, Cl) carrying real valences, masses, and electronegativities. Bonds
 form and break by Boltzmann probabilities against tables of real bond
 energies, steered by VSEPR geometry, while temperature, pressure, and UV
