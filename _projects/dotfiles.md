@@ -3,7 +3,7 @@ layout: page
 title: Dotfiles - Declarative System Configuration Framework
 permalink: /projects/dotfiles/
 repo_url: https://github.com/funkybooboo/dotfiles
-description: A idempotent, non-fatal migration system that declaratively provisions and converges every Arch Linux machine I own.
+description: An idempotent, non-fatal migration system that declaratively provisions and converges every Arch Linux machine I own.
 ---
 
 **Repository:** [github.com/funkybooboo/dotfiles](https://github.com/funkybooboo/dotfiles)
@@ -16,7 +16,7 @@ and re-runs safely and idempotently.
 
 ## Key Features
 
-*   **Migration engine:** 124 ordered, idempotent, non-fatal migrations that
+*   **Migration engine:** 152 ordered, idempotent, non-fatal migrations that
     install packages, link config, deploy system files, and enable services.
     A single failure records a warning and continues --- one broken step never
     aborts a whole-machine convergence.

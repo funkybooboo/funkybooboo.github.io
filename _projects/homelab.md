@@ -3,14 +3,14 @@ layout: page
 title: Homelab - Proxmox Virtualization Cluster
 permalink: /projects/homelab/
 repo_url: https://github.com/funkybooboo/homelab
-description: A 5-node Proxmox VE cluster backed by TrueNAS Scale, running ~19 HA-managed LXC containers over a Tailscale mesh.
+description: A 5-node Proxmox VE cluster backed by TrueNAS Scale, running 29 LXC containers (22 HA-managed) over a Tailscale mesh.
 ---
 
 **Repository:** [github.com/funkybooboo/homelab](https://github.com/funkybooboo/homelab)
 
 A self-hosted infrastructure platform I operate as a 5-node Proxmox VE cluster,
 backed by TrueNAS Scale and fronted by a Tailscale mesh VPN. The cluster runs
-around 19 LXC workloads under high-availability management.
+29 LXC workloads, 22 of them under high-availability management.
 
 ## Architecture
 
